@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarvish - Download Center</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #0a0f2c, #050816);
+      color: white;
+      text-align: center;
+    }
+    .card {
+      background: #0f172a;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 25px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Jarvish - Download Center</h1>
+
+  <div class="card">
+    <p>Website successfully working 🎉</p>
+    <a href="#">Sample Download</a>
+  </div>
+
+  <div class="card">
+    <p>Photos</p>
+    <a href="media/photo1.jpg" download>Download Photo</a>
+  </div>
+
+  <div class="card">
+    <p>Videos</p>
+    <a href="media/video1.mp4" download>Download Video</a>
+  </div>
+
+</body>
+<div class="card">
+  <p>Gallery</p>
+  <a href="media/photo1.jpg" download>Photo 1</a>
+  <a href="media/photo2.jpg" download>Photo 2</a>
+  <a href="media/video1.mp4" download>Video 1</a>
+</div>
+<script>
+  var pass = prompt("Enter Password");
+  if(pass !== "1234"){
+    document.body.innerHTML = "Access Denied ";
+  }
+  .card {
+  animation: fadeUp 0.8s ease;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+a:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
